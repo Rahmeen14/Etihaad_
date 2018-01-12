@@ -53,4 +53,11 @@ Open Your favourite browser and go to localhost:3000 to access this site.
 ![alt text](images/Screenshot(54).png)
 ![alt text](images/Screenshot(55).png)
 
+## Legend
+- Green Ticks: Safest
+- Smiley: Moderately safe
+- Exclamation mark: Be careful
+- Skull: Moderately dangerous
+- Cross: Extremely dangerous
+
 This Project was made collectively by [Akshita Aggarwal](https://www.github.com/akshitaag) and [Rahmeen Habib](https://www.github.com/rahmeen14) as a part of a hackathon at MSIT.
