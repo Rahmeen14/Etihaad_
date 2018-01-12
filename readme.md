@@ -30,6 +30,13 @@ We used Google map and google places apis to display all possible routes between
 
 The k-means algorithm assigns 0-4 values to 166 locations in Delhi. An index of 0 indicates that the place is relatively safe with less crime rates in past while an index of 4 means that the place has high crime records in the past.
 We used various legends to display safety index of various locations in Delhi.
+### Legend
+- Green Ticks: Safest
+- Smiley: Moderately safe
+- Exclamation mark: Be careful
+- Skull: Moderately dangerous
+- Cross: Extremely dangerous
+
 
 ## PREREQUISITES
 
@@ -53,11 +60,5 @@ Open Your favourite browser and go to localhost:3000 to access this site.
 ![alt text](images/Screenshot(54).png)
 ![alt text](images/Screenshot(55).png)
 
-## Legend
-- Green Ticks: Safest
-- Smiley: Moderately safe
-- Exclamation mark: Be careful
-- Skull: Moderately dangerous
-- Cross: Extremely dangerous
 
 This Project was made collectively by [Akshita Aggarwal](https://www.github.com/akshitaag) and [Rahmeen Habib](https://www.github.com/rahmeen14) as a part of a hackathon at MSIT.
