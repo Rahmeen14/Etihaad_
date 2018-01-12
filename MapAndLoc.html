@@ -249,7 +249,7 @@
          // size: new google.maps.Size(20, 32),
     
         };
-        color=["red","yellow","green","blue","pink"];
+        color=["purple","yellow","green","blue","pink"];
             //me.directionsDisplay.setDirections(response);
            console.log(response.routes.length);
            var dindex=[];
@@ -265,7 +265,10 @@
                      unitSystem: google.maps.UnitSystem.METRIC,
                     provideRouteAlternatives: true,
                       polylineOptions: {
-                    strokeColor: color[k]
+                    strokeColor: color[k],
+                    strokeOpacity: 0.7,
+                    strokeWeight: 10
+
                 }
 
                 });
