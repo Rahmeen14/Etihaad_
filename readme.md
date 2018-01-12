@@ -49,4 +49,8 @@ Node app.js
 ```
 Open Your favourite browser and go to localhost:3000 to access this site.
 
+## At a glance:
+![alt text](images/Screenshot(54).png)
+![alt text](images/Screenshot(55).png)
+
 This Project was made collectively by [Akshita Aggarwal](https://www.github.com/akshitaag) and [Rahmeen Habib](https://www.github.com/rahmeen14) as a part of a hackathon at MSIT.
