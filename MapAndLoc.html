@@ -4,6 +4,8 @@
   <head>
     <title>Place Autocomplete</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" >
+
     <meta charset="utf-8">
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -57,10 +59,17 @@
         font-size: 13px;
         font-weight: 300;
       }
+      li{
+      	font-family: georgia;
+      }
 
     </style>
   </head>
   <body>
+  	<div class= "ui main container segment">
+  		<h1 style="font-size: 75px; font-family: georgia">ETIHAAD</h1>
+  		<h2 style="text-align: right; font-family: georgia">Because you must look before you leave!</h2>
+  	</div>
     <input id="origin-input" class="controls" type="text"
         placeholder="Enter an origin location">
 
@@ -78,12 +87,12 @@
       <label for="changemode-driving">Driving</label>
     </div>
 
-    <div id="map"></div>
-    <div id="color">Color: </div>
-    <div id="duration">Duration: </div>
-    <div id="distance">Distance: </div>
-     <div id="safetyi">Safety Index: </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABXrzOdYntmVFt7vHZPMHEtAnvZLr7N-s&libraries=places"
+    <div id="map" class="ui container"></div>
+   <div class = "ui container">
+   	<h2>Choose the path with the least danger index for a safe travel!</h2>
+   </div>
+    
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABXrzOdYntmVFt7vHZPMHEtAnvZLr7N-s&libraries=places"
         ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
    
@@ -333,18 +342,26 @@ dindex[k]+=4;
                 }
               
  dindex[k]/=count;
-  document.getElementById('color').innerHTML += "Route " + k + ": " +
+ var div = document.createElement('div');
+ div.className = "ui main container segment"
+ document.body.appendChild(div);
+ var colour = "color"+k,
+ 	 duration = "duration"+k,
+ 	 distance = "distance"+k,
+ 	 safetyi = "safetyi"+k;
+ div.innerHTML = '<ul class="msg"><li id='+colour+'></li><li id='+duration+'></li><li id='+distance+'></li><li id='+safetyi+'></li></ul>';
+  document.getElementById(colour).innerHTML = "Route Number:  " + k + " is colored " +
       (color[k]) ;
-   document.getElementById('distance').innerHTML += "Route " + k + ": " +
+   document.getElementById(distance).innerHTML = "Distance  : " +
       (response.routes[k].legs[0].distance.text) ;
     //console.log((response.routes[i].legs[0].distance.value) / 1000 + "killo meters");
     // Display the duration:
-    document.getElementById('duration').innerHTML += "Route " + k + ": " +
+    document.getElementById(duration).innerHTML = "Time duration for reaching : " +
       response.routes[k].legs[0].duration.text;
     console.log(response.routes[k].legs[0]);
   infoWindow.setPosition(posInit);
    var message = 'dangerIndex is :'+dindex[k];
-  document.getElementById('safetyi').innerHTML += "Route " + k + ": " +message;
+  document.getElementById(safetyi).innerHTML = message;
   var dis='Route :'+k;
    //infoWindow.setContent(dis);
       //       infoWindow.open(map);
