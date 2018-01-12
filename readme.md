@@ -13,7 +13,7 @@ Our app aims at detecting the safest route by finding danger index of all possib
 We hope to extend that by including more detailed and transparent data which is not currently available.
 
 
-## Techinal concept used:
+## Technical concept used:
 
 We have applied Unsupervised Machine Learning Algorithm to find danger index of multiple routes between two places.
 
