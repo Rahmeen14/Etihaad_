@@ -44,6 +44,7 @@ npm
 Clone this repo
 cd into this repo
 npm install
+Generate your Google Maps API key and insert it in script in the .html file 
 node app.js
 ```
 Open Your favourite browser and go to localhost:3000 to access this site. (Select driving/walking/transit radio buttons before you enter places. Refresh evreytime you need to test for a different set of places)
