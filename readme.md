@@ -54,4 +54,4 @@ Open Your favourite browser and go to localhost:3000 to access this site. (Selec
 ![alt text](images/Screenshot(55).png)
 
 
-This Project was made collectively by [Rahmeen Habib](https://www.github.com/rahmeen14) and [Akshita Aggarwal](https://www.github.com/akshitaag) as a part of a hackathon at MSIT.
+This Project was made collectively by [Rahmeen Habib](https://www.github.com/rahmeen14) and [Akshita Aggarwal](https://www.github.com/akshitaag) as a part of a hackathon at MSIT. :smile:
